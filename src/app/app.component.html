@@ -1,0 +1,10 @@
+<app-create-user (createTodoEvent)="createTodo($event)"></app-create-user>
+<ng-container *ngIf="todos$ | async as todo">
+  <app-table
+    (editEvent)="editTodo($event)"
+    (deleteEvent)="deleteTodo($event)"
+    (sortEvent)="sortTodos($event)"
+    [todos]="todo"
+  >
+  </app-table>
+</ng-container>

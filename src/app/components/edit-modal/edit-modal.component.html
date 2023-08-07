@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Edit todo</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>new todo name</mat-label>
+    <input matInput [formControl]="todoEdit" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancelEdit()">Cancel</button>
+  <button mat-button cdkFocusInitial (click)="editTodo()">Edit</button>
+</div>

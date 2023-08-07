@@ -1,0 +1,7 @@
+<mat-form-field class="example-full-width">
+  <mat-label>Create todo</mat-label>
+  <input matInput [formControl]="todoCreation" />
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="createTodo()">
+  Create Todo
+</button>
